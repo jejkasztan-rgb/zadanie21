@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie21</title>
+</head>
+<body>
+
+<h2>Wyniki:</h2>
+
+<script>
+let input = prompt("Podaj liczbę całkowitą:");
+let number = parseInt(input);
+
+if (isNaN(number)) {
+    document.write("To nie jest poprawna liczba całkowita!");
+} else {
+
+    //1
+    document.write("Wprowadzona liczba: " + number + "<br>");
+
+    //2
+    document.write("Liczba o przeciwnym znaku: " + (-number) + "<br>");
+
+    //3
+    document.write("Liczba + 15: " + (number + 15) + "<br>");
+
+    //4
+    document.write("Liczba + 0.5: " + (number + 0.5) + "<br>");
+
+    //5
+    document.write("Kwadrat liczby: " + (number * number) + "<br>");
+
+    //6
+    document.write("Dzielenie przez 2: " + (number / 2) + "<br>");
+
+    //7
+    document.write("Reszta z dzielenia przez 2: " + (number % 2) + "<br>");
+
+    //8
+    document.write("Liczba o 1 większa: " + (number + 1) + "<br>");
+
+    //9
+    document.write("Liczba o 1 mniejsza: " + (number - 1) + "<br>");
+
+    let div3 = number / 3;
+
+    //10
+    document.write("Zaokrąglenie w dół (n/3): " + Math.floor(div3) + "<br>");
+
+    //11
+    document.write("Zaokrąglenie w górę (n/3): " + Math.ceil(div3) + "<br>");
+
+    //12
+    document.write("Zaokrąglenie do najbliższej (n/3): " + Math.round(div3) + "<br>");
+
+    //13
+    document.write("Pierwiastek z liczby: " + Math.sqrt(number) + "<br>");
+
+    //14
+    let random = Math.random() * 50;
+    document.write("Iloczyn z liczbą losową (0-50): " + (number * random) + "<br>");
+
+    //15
+    document.write("Wartość bezwzględna: " + Math.abs(number) + "<br>");
+}
+</script>
+
+</body>
+</html>
